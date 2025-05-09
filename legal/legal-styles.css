@@ -1,0 +1,336 @@
+/* Legal Database Resources Styles */
+:root {
+    --legal-primary: #2c3e50;
+    --legal-secondary: #3498db;
+    --legal-accent: #e74c3c;
+    --legal-light: #ecf0f1;
+    --legal-dark: #34495e;
+    --legal-success: #2ecc71;
+    --legal-warning: #f39c12;
+    --legal-danger: #e74c3c;
+    --legal-info: #3498db;
+}
+
+.legal-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.legal-header {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.legal-header h1 {
+    color: var(--legal-primary);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.legal-header p {
+    color: var(--legal-dark);
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Source Selector Styles */
+.legal-source-selector {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.legal-source-category {
+    flex: 1;
+    min-width: 250px;
+}
+
+.legal-source-category h3 {
+    color: var(--legal-primary);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--legal-secondary);
+}
+
+.legal-source-list {
+    list-style: none;
+    padding: 0;
+}
+
+.legal-source-item {
+    margin-bottom: 0.5rem;
+}
+
+.legal-source-item a {
+    display: block;
+    padding: 0.5rem;
+    color: var(--legal-dark);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.legal-source-item a:hover {
+    background-color: var(--legal-light);
+    color: var(--legal-secondary);
+}
+
+.legal-source-item a.active {
+    background-color: var(--legal-secondary);
+    color: white;
+}
+
+/* PreProcessing Styles */
+.preprocessing-container {
+    margin-bottom: 2rem;
+}
+
+.preprocessing-form {
+    background-color: var(--legal-light);
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.preprocessing-form h3 {
+    color: var(--legal-primary);
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--legal-dark);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.preprocessing-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.btn-legal {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-legal-primary {
+    background-color: var(--legal-secondary);
+    color: white;
+}
+
+.btn-legal-primary:hover {
+    background-color: #2980b9;
+}
+
+.btn-legal-secondary {
+    background-color: var(--legal-light);
+    color: var(--legal-dark);
+}
+
+.btn-legal-secondary:hover {
+    background-color: #bdc3c7;
+}
+
+/* Citation Styles */
+.citation-container {
+    margin-bottom: 2rem;
+}
+
+.citation-search {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.citation-search input {
+    flex: 1;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.citation-results {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.citation-item {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.citation-item:last-child {
+    border-bottom: none;
+}
+
+.citation-title {
+    font-weight: 600;
+    color: var(--legal-primary);
+    margin-bottom: 0.5rem;
+}
+
+.citation-meta {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 0.5rem;
+}
+
+.citation-content {
+    margin-bottom: 0.5rem;
+}
+
+.citation-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.citation-actions button {
+    padding: 0.25rem 0.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.citation-actions .btn-cite {
+    background-color: var(--legal-info);
+    color: white;
+}
+
+.citation-actions .btn-save {
+    background-color: var(--legal-success);
+    color: white;
+}
+
+/* Best Practices Styles */
+.best-practices-container {
+    margin-bottom: 2rem;
+}
+
+.best-practices-list {
+    list-style: none;
+    padding: 0;
+}
+
+.best-practice-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.best-practice-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.best-practice-title {
+    font-weight: 600;
+    color: var(--legal-primary);
+    font-size: 1.2rem;
+}
+
+.best-practice-tag {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.tag-recommended {
+    background-color: var(--legal-success);
+    color: white;
+}
+
+.tag-warning {
+    background-color: var(--legal-warning);
+    color: white;
+}
+
+.tag-critical {
+    background-color: var(--legal-danger);
+    color: white;
+}
+
+.best-practice-content {
+    color: var(--legal-dark);
+    margin-bottom: 1rem;
+}
+
+.best-practice-references {
+    background-color: var(--legal-light);
+    padding: 1rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.best-practice-references h4 {
+    margin-bottom: 0.5rem;
+    color: var(--legal-primary);
+}
+
+.best-practice-references ul {
+    padding-left: 1.5rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .legal-source-selector {
+        flex-direction: column;
+    }
+    
+    .citation-search {
+        flex-direction: column;
+    }
+    
+    .preprocessing-actions {
+        flex-direction: column;
+    }
+    
+    .best-practice-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+}
