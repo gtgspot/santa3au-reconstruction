@@ -1,229 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- HTML5 DocType already declared above -->
-    
-    <!-- UTF-8 Document Encoding -->
     <meta charset="UTF-8">
-    
-    <!-- Viewport Meta for Mobile Compatibility -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    
-    <!-- Mobile Non-Scaleable Content -->
-    <meta name="HandheldFriendly" content="true">
-    
-    <!-- iPhone/Mobile Compatible -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="mobile-web-app-capable" content="yes">
-    
-    <!-- Apple Mobile Web App Status Bar Style -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    
-    <!-- Apple Mobile Web Clips Icon -->
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-touch-icon-152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon-180.png">
-    <link rel="apple-touch-icon" sizes="167x167" href="images/apple-touch-icon-167.png">
-    
-    <!-- Meta Description -->
-    <meta name="description" content="Santa3AU - Your ultimate Christmas destination with a variety of festive products and experiences.">
-    
-    <!-- Open Graph Protocol for social media sharing -->
-    <meta property="og:title" content="Santa3AU - Christmas Magic">
-    <meta property="og:description" content="Explore our wide range of Christmas products and experiences.">
-    <meta property="og:image" content="https://santa3au_reconstruction.com/images/og-image.jpg">
-    <meta property="og:url" content="https://santa3au.com">
-    <meta property="og:type" content="website">
-    
-    <!-- Facebook Meta Tags -->
-    <meta property="fb:app_id" content="123456789012345">
-    
-    <!-- Google Font API -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Mountains+of+Christmas:wght@400;700&display=swap" rel="stylesheet">
-    
-    <!-- Cloudflare CDN for libraries -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    <!-- CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santa3au - Premium iGaming Platform</title>
+    <meta name="description" content="Santa3au - Your trusted iGaming platform offering casino games, sports betting, and more.">
     <link rel="stylesheet" href="css/styles.css">
-    
-    <title>Santa3AU Reconstruction</title>
-    
-    <!-- Note: X-Frame-Options and HTTP3 Alt-Svc headers are server configurations -->
-    <!-- X-Frame-Options would be set on the server to: SAMEORIGIN -->
-    <!-- HTTP3 Alt-Svc would be configured on the server side with Cloudflare -->
-    
-    <!-- JavaScript libraries -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="icon" href="images/favicon.ico">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-        <!-- HTML5 Specific Tags: header -->
-        <nav>
-            <div class="logo">
-                <img src="images/logo.png" alt="Santa3AU Logo">
+        <div class="header-top">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Santa3au Logo">
+                    </a>
+                </div>
+                <div class="user-actions">
+                    <button class="btn login">Login</button>
+                    <button class="btn register">Register</button>
+                </div>
             </div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
+        </div>
+        <nav class="main-nav">
+            <div class="container">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Casino</a></li>
+                    <li><a href="#">Live Casino</a></li>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">Promotions</a></li>
+                    <li><a href="#">VIP</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="legal/index.html">Legal Resources</a></li>
+                </ul>
             </div>
         </nav>
     </header>
-    
-    <main>
-        <!-- HTML5 Specific Tags: main -->
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <h1>Welcome to Santa3AU</h1>
-                <p>Your ultimate Christmas destination</p>
-                <button class="cta-button">Shop Now</button>
-            </div>
-        </section>
-        
-        <section id="featured">
-            <h2>Featured Products</h2>
-            <div class="products-grid">
-                <div class="product-card">
-                    <img src="images/product1.jpg" alt="Christmas Tree">
-                    <h3>Premium Christmas Tree</h3>
-                    <p>$99.99</p>
-                    <button>Add to Cart</button>
-                </div>
-                <div class="product-card">
-                    <img src="images/product2.jpg" alt="Christmas Lights">
-                    <h3>LED Christmas Lights</h3>
-                    <p>$24.99</p>
-                    <button>Add to Cart</button>
-                </div>
-                <div class="product-card">
-                    <img src="images/product3.jpg" alt="Christmas Ornaments">
-                    <h3>Ornament Set</h3>
-                    <p>$34.99</p>
-                    <button>Add to Cart</button>
-                </div>
-            </div>
-        </section>
-        
-        <!-- HTML5 Video/Audio Tags -->
-        <section id="media-section">
-            <h2>Christmas Atmosphere</h2>
-            <div class="media-container">
-                <video controls poster="images/video-poster.jpg">
-                    <source src="videos/christmas.mp4" type="video/mp4">
-                    <source src="videos/christmas.webm" type="video/webm">
-                    Your browser does not support HTML5 video.
-                </video>
-                
-                <audio controls>
-                    <source src="videos/jingle-bells.mp3" type="audio/mpeg">
-                    <source src="videos/jingle-bells.ogg" type="audio/ogg">
-                    Your browser does not support HTML5 audio.
-                </audio>
-            </div>
-        </section>
-        
-        <!-- iFrame component -->
-        <section id="map-section">
-            <h2>Find Us</h2>
-            <div class="map-container">
-                <!-- iFrame embedding Google Maps -->
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26081603.294420466!2d-95.677068!3d37.06250000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sus!4v1620751714309!5m2!1sen!2sus" 
-                    width="100%" 
-                    height="450" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy">
-                </iframe>
-            </div>
-        </section>
-        
-        <!-- Facebook integration component -->
-        <section id="social-section">
-            <h2>Connect With Us</h2>
-            <div class="facebook-container">
-                <!-- Facebook Like Button -->
-                <div id="fb-root"></div>
-                <div class="fb-like" 
-                    data-href="https://santa3au.com" 
-                    data-width="" 
-                    data-layout="standard" 
-                    data-action="like" 
-                    data-size="large" 
-                    data-share="true">
-                </div>
-                
-                <!-- Facebook Comments -->
-                <div class="fb-comments" 
-                    data-href="https://santa3au.com" 
-                    data-width="100%" 
-                    data-numposts="5">
-                </div>
-            </div>
-        </section>
-    </main>
-    
-    <footer>
-        <!-- HTML5 Specific Tags: footer -->
-        <div class="footer-content">
-            <div class="footer-section about">
-                <h3>About Us</h3>
-                <p>Santa3AU is your go-to destination for all things Christmas. We provide high-quality products to make your holiday season magical.</p>
-            </div>
-            <div class="footer-section links">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#products">Products</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                </ul>
-            </div>
-            <div class="footer-section contact">
-                <h3>Contact Us</h3>
-                <p><i class="fas fa-map-marker-alt"></i> 123 Christmas Lane, North Pole</p>
-                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
-                <p><i class="fas fa-envelope"></i> info@santa3au.com</p>
+
+    <section class="hero">
+        <div class="banner">
+            <img src="images/banner.jpg" alt="Welcome to Santa3au">
+            <div class="banner-content">
+                <h1>Welcome to Santa3au</h1>
+                <p>Experience premium iGaming with generous bonuses and exciting games</p>
+                <button class="btn-primary">Join Now</button>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2023 Santa3AU. All Rights Reserved.</p>
+    </section>
+
+    <section class="game-categories">
+        <div class="container">
+            <h2>Popular Games</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <i class="fas fa-dice"></i>
+                    <h3>Casino Games</h3>
+                    <p>Slots, Table Games, and more</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-video"></i>
+                    <h3>Live Casino</h3>
+                    <p>Real dealers, real action</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-futbol"></i>
+                    <h3>Sports Betting</h3>
+                    <p>Bet on your favorite teams</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-trophy"></i>
+                    <h3>Tournaments</h3>
+                    <p>Compete for big prizes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="promo-video">
+        <div class="container">
+            <h2>See What We Offer</h2>
+            <div class="video-container">
+                <video controls poster="images/video-poster.jpg">
+                    <source src="videos/intro.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2>Why Choose Santa3au</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <i class="fas fa-lock"></i>
+                    <h3>Secure Gaming</h3>
+                    <p>Advanced encryption and security protocols</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <h3>Fast Payouts</h3>
+                    <p>Get your winnings quickly and easily</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>24/7 Support</h3>
+                    <p>Help available whenever you need it</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-gift"></i>
+                    <h3>Generous Bonuses</h3>
+                    <p>Regular promotions and loyalty rewards</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Players Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <p>"The best gaming experience I've had online. Great games and fast payouts!"</p>
+                    <div class="user">John D.</div>
+                </div>
+                <div class="testimonial">
+                    <p>"Customer support is excellent and the bonuses are very generous."</p>
+                    <div class="user">Maria S.</div>
+                </div>
+                <div class="testimonial">
+                    <p>"I love the variety of games and the user-friendly interface."</p>
+                    <div class="user">Robert T.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="Santa3au Logo">
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Games</a></li>
+                        <li><a href="#">Promotions</a></li>
+                        <li><a href="#">VIP Program</a></li>
+                        <li><a href="#">Affiliate Program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Responsible Gaming</a></li>
+                        <li><a href="legal/index.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe to our newsletter for exclusive offers</p>
+                    <form>
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Santa3au. All rights reserved.</p>
+                <div class="payment-methods">
+                    <span>Payment Methods:</span>
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-bitcoin"></i>
+                    <i class="fab fa-ethereum"></i>
+                </div>
+            </div>
         </div>
     </footer>
+
+    <!-- Auth Modal Container - Will be populated dynamically -->
+    <div class="auth-modal-container"></div>
     
-    <!-- JavaScript - placed at the bottom for better page load performance -->
-    <script src="js/main.js"></script>
+    <!-- Notification Container for System Messages -->
+    <div class="notification-container"></div>
     
-    <!-- Facebook SDK for JavaScript -->
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0&appId=123456789012345"></script>
+    <!-- Loading Overlay -->
+    <div class="loading-overlay">
+        <div class="loading-spinner"></div>
+    </div>
     
-    <!-- Analytics - Facebook Pixel Code -->
-    <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '123456789123');
-        fbq('track', 'PageView');
-    </script>
-    <noscript>
-        <img height="1" width="1" style="display:none" 
-            src="https://www.facebook.com/tr?id=123456789123&ev=PageView&noscript=1"/>
-    </noscript>
-    <!-- End Facebook Pixel Code -->
+    <script src="js/scripts.js"></script>
 </body>
 </html>

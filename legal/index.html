@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AU Legal Database Resources - Santa3au</title>
+    <meta name="description" content="Access Australian legal database resources, Victorian legislation, and legal best practices.">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="legal-styles.css">
+    <link rel="icon" href="../images/favicon.ico">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../images/logo.png" alt="Santa3au Logo">
+                    </a>
+                </div>
+                <div class="user-actions">
+                    <button class="btn login">Login</button>
+                    <button class="btn register">Register</button>
+                </div>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <div class="container">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="#">Casino</a></li>
+                    <li><a href="#">Live Casino</a></li>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">Promotions</a></li>
+                    <li><a href="#">VIP</a></li>
+                    <li><a href="#" class="active">Legal Resources</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="legal-hero">
+        <div class="container">
+            <div class="legal-header">
+                <h1>AU Legal Database Resources</h1>
+                <p>Access comprehensive Australian legal resources, with a focus on Victorian legislation and case law.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="legal-main">
+        <div class="container legal-container">
+            <!-- Legal Source Selector - IMPROVEMENT 1: PreProcessing Legal Resources -->
+            <div class="legal-source-selector">
+                <div class="legal-source-category">
+                    <h3>Primary Statutes (Victoria)</h3>
+                    <ul class="legal-source-list">
+                        <li class="legal-source-item"><a href="#" data-source-id="crimes-act">Crimes Act 1958</a></li>
+                        <li class="legal-source-item"><a href="#" data-source-id="summary-offences">Summary Offences Act 1966</a></li>
+                        <li class="legal-source-item"><a href="#" data-source-id="sentencing-act">Sentencing Act 1991</a></li>
+                        <li class="legal-source-item"><a href="#" data-source-id="bail-act">Bail Act 1977</a></li>
+                        <li class="legal-source-item"><a href="#" data-source-id="evidence-act">Evidence Act 2008</a></li>
+                    </ul>
+                </div>
+                <div class="legal-source-category">
+                    <h3>Secondary Legislation (Victoria)</h3>
+                    <ul class="legal-source-list">
+                        <li class="legal-source-item"><a href="#" data-source-id="criminal-procedure">Criminal Procedure Act 2009</a></li>
+                        <li class="legal-source-item"><a href="#" data-source-id="jury-directions">Jury Directions Act 2015</a></li>
+                        <li class="legal-source-item"><a href="#" data-source-id="family-violence">Family Violence Protection Act 2008</a></li>
+                    </ul>
+                </div>
+                <div class="legal-source-category">
+                    <h3>Court Rules</h3>
+                    <ul class="legal-source-list">
+                        <li class="legal-source-item"><a href="#" data-source-id="magistrates-court">Magistrates' Court Act 1989</a></li>
+                        <li class="legal-source-item"><a href="#" data-source-id="county-court">County Court Act 1958</a></li>
+                        <li class="legal-source-item"><a href="#" data-source-id="supreme-court">Supreme Court Act 1986</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Legal Content Container -->
+            <div class="legal-content-container">
+                <div class="legal-content">
+                    <h2>Victorian Legal Resources</h2>
+                    <p>Select a legal source from the menu to view its content.</p>
+                </div>
+            </div>
+
+            <!-- IMPROVEMENT 1: PreProcessing Legal Resources -->
+            <div class="preprocessing-container">
+                <h2>PreProcessing Legal Resources</h2>
+                <p>Upload and process legal documents to identify key elements, citations, and structure.</p>
+                
+                <div class="preprocessing-form">
+                    <h3>Process Legal Document</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="document-type">Document Type</label>
+                            <select id="document-type" name="document-type">
+                                <option value="case-law">Case Law</option>
+                                <option value="legislation">Legislation</option>
+                                <option value="submission">Legal Submission</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="document-text">Document Text</label>
+                            <textarea id="document-text" name="document-text" placeholder="Paste your legal document text here..."></textarea>
+                        </div>
+                        <div class="preprocessing-actions">
+                            <button type="submit" class="btn-legal btn-legal-primary">Process Document</button>
+                            <button type="reset" class="btn-legal btn-legal-secondary">Clear</button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="preprocessing-results">
+                    <!-- Results will be populated dynamically -->
+                </div>
+            </div>
+
+            <!-- IMPROVEMENT 2: Citing Relevant Case-Law -->
+            <div class="citation-container">
+                <h2>Citing Relevant Case-Law</h2>
+                <p>Search and cite relevant Victorian and Australian case law for your legal research.</p>
+                
+                <div class="citation-search">
+                    <form>
+                        <div class="form-group">
+                            <label for="citation-query">Search Query</label>
+                            <input type="text" id="citation-query" name="citation-query" placeholder="Search by case name, topic, or citation...">
+                        </div>
+                        <div class="form-group">
+                            <label for="jurisdiction">Jurisdiction</label>
+                            <select id="jurisdiction" name="jurisdiction">
+                                <option value="all">All Jurisdictions</option>
+                                <option value="vic" selected>Victoria</option>
+                                <option value="nsw">New South Wales</option>
+                                <option value="qld">Queensland</option>
+                                <option value="federal">Federal</option>
+                            </select>
+                        </div>
+                        <div class="preprocessing-actions">
+                            <button type="submit" class="btn-legal btn-legal-primary">Search</button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="citation-results">
+                    <!-- Results will be populated dynamically -->
+                </div>
+            </div>
+
+            <!-- IMPROVEMENT 3: Identifying Issues With Best Practices -->
+            <div class="best-practices-container">
+                <h2>Legal Best Practices</h2>
+                <p>Identify and implement best practices for Victorian legal procedures and documentation.</p>
+                
+                <div class="best-practices-filter">
+                    <form>
+                        <div class="form-group">
+                            <label for="category">Category</label>
+                            <select id="category" name="category">
+                                <option value="all">All Categories</option>
+                                <option value="citation">Citation</option>
+                                <option value="research">Research</option>
+                                <option value="confidentiality">Confidentiality</option>
+                                <option value="procedure">Procedure</option>
+                                <option value="documentation">Documentation</option>
+                                <option value="evidence">Evidence</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="severity">Severity</label>
+                            <select id="severity" name="severity">
+                                <option value="all">All Severities</option>
+                                <option value="recommended">Recommended</option>
+                                <option value="warning">Warning</option>
+                                <option value="critical">Critical</option>
+                            </select>
+                        </div>
+                        <div class="preprocessing-actions">
+                            <button type="submit" class="btn-legal btn-legal-primary">Filter</button>
+                        </div>
+                    </form>
+                </div>
+                
+                <ul class="best-practices-list">
+                    <!-- Best practices will be populated dynamically -->
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="../images/logo.png" alt="Santa3au Logo">
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="#">Games</a></li>
+                        <li><a href="#">Promotions</a></li>
+                        <li><a href="#">VIP Program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Responsible Gaming</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe to our newsletter for exclusive offers</p>
+                    <form>
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Santa3au. All rights reserved.</p>
+                <div class="payment-methods">
+                    <span>Payment Methods:</span>
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-bitcoin"></i>
+                    <i class="fab fa-ethereum"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Auth Modal Container - Will be populated dynamically -->
+    <div class="auth-modal-container"></div>
+    
+    <!-- Notification Container for System Messages -->
+    <div class="notification-container"></div>
+    
+    <!-- Loading Overlay -->
+    <div class="loading-overlay">
+        <div class="loading-spinner"></div>
+    </div>
+    
+    <script src="../js/scripts.js"></script>
+    <script src="legal-resources.js"></script>
+</body>
+</html>
